@@ -24,4 +24,4 @@ class Rectangle(Shape):
 
 s = Rectangle(int(input()), int(input()))
 s.area()
-
+ 

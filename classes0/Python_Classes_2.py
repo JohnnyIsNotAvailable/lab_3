@@ -14,4 +14,4 @@ class Square(Shape):
 
 
 s = Square(int(input()))
-s.area()
+s.area() 

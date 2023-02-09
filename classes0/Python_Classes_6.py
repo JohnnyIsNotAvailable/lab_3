@@ -14,5 +14,5 @@ nums = input(int()).split()
     
 p = []        
 number = Prime()
-number.prime(nums)
+number.prime(nums) 
 print(p)   

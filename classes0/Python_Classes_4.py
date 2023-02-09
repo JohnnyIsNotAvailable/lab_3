@@ -19,4 +19,4 @@ class Point():
 pl = Point(x,y)
 pl.Dist()
 pl.Show()
-pl.Move()
+pl.Move() 
