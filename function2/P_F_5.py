@@ -1,5 +1,3 @@
-# Dictionary of movies
-
 movies = [
 {
 "name": "Usual Suspects", 
@@ -77,14 +75,21 @@ movies = [
 "category": "Romance"
 }
 ]
-'''
-target = input()
-def Score(target):
-    filter(lambda person: person['name'] == target, movies)
-'''
 
-# Task 1
-def score_above_5_5(movie):
-    return movie["imdb"] > 5.5
 
-print(score_above_5_5(input('Print name: '))) 
+def movies_by_category(movies_list, category):
+    return [movie for movie in movies_list if movie["category"] == category]
+
+
+def average_imdb_score(movies_list):
+    total_score = sum([movie["imdb"] for movie in movies_list])
+    return total_score / len(movies_list)
+
+
+
+def average_category_score(movies_list, category):
+    category_movies = movies_by_category(movies_list, category)
+    answer = average_imdb_score(category_movies)
+    return answer
+
+print(average_category_score(movies, input("Enter category: ")))

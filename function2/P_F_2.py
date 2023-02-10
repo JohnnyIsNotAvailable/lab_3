@@ -1,5 +1,3 @@
-# Dictionary of movies
-
 movies = [
 {
 "name": "Usual Suspects", 
@@ -77,14 +75,8 @@ movies = [
 "category": "Romance"
 }
 ]
-'''
-target = input()
-def Score(target):
-    filter(lambda person: person['name'] == target, movies)
-'''
 
-# Task 1
-def score_above_5_5(movie):
-    return movie["imdb"] > 5.5
+def score_above_5_5_movies(movies_list):
+    return [movie for movie in movies_list if movie["imdb"] > 5.5]
 
-print(score_above_5_5(input('Print name: '))) 
+print(score_above_5_5_movies(movies))
