@@ -85,6 +85,11 @@ def Score(target):
 
 # Task 1
 def score_above_5_5(movie):
-    return movie["imdb"] > 5.5
+    for movie in movies:
+        if movie["name"] == name and movie["imdb"] > 5.5:
+            return True
+    return False
 
-print(score_above_5_5(input('Print name: '))) 
+name = input('Print name: ')
+
+print(score_above_5_5(name)) 
