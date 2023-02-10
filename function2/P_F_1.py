@@ -83,7 +83,7 @@ def Score(target):
     filter(lambda person: person['name'] == target, movies)
 '''
 
-# Task 1
+
 def score_above_5_5(movie):
     for movie in movies:
         if movie["name"] == name and movie["imdb"] > 5.5:
